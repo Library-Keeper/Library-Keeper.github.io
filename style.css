@@ -1,0 +1,8 @@
+.js-tilt {
+    background-color: green;
+    padding: 100px;
+    margin: 0 auto;
+    position: absolute;
+    transform-style: preserve-3d;
+    border-radius: 20px;
+}
