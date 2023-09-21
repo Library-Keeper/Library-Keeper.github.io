@@ -26,15 +26,13 @@ body {
 }
   
 .container {
-    width: 61%;
+    width: 580px;
     height: 400px;
     margin: 0 auto;
     border: 10px solid var(--clr-dark);
 }
   
 .item {
-    width: 150px;
-    height: 150px;
     background-color: #fb7185;
     padding: 1em;
     font-weight: 700;
@@ -42,6 +40,20 @@ body {
     text-align: center;
     border: 10px solid var(--clr-accent);
     border-radius: 10px;
+}
+
+@media screen and (max-width: 399px) {
+    .item {
+        width: 130px;
+        height: 130px;
+    }    
+}
+
+@media screen and (min-width: 400px) {
+    .item {
+        width: 150px;
+        height: 150px;
+    }    
 }
   
 /* END OF BASE STYLES */
@@ -66,10 +78,16 @@ body {
     flex-grow: 1;
     background: linear-gradient(222deg, rgba(0,255,248,1) 0%, rgba(0,104,255,1) 100%);
 }
+@media screen and (max-width: 360px) {
+    .item-2 {
+        flex-grow: 1;
+    }   
+}
 
 .item-2 {
     background: linear-gradient(222deg, rgba(255,0,254,1) 0%, rgba(70,0,128,1) 100%);
 }
+
 
 .item-3 {
     flex-grow: 1;
